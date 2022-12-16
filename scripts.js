@@ -9,7 +9,7 @@ video.setAttribute('autoplay', '');
 video.setAttribute('muted', '');
 video.setAttribute('playsinline', '')
 
-//var img1 = loadImage('./sun.png');
+var img1 = loadImage('./sun.png');
 
 const constraints = {
   audio: false,
@@ -61,7 +61,7 @@ function paintToCanvas() {
   return setInterval(() => {
     ctx.drawImage(video, 0, 0, width, height);
 
-    //ctx.drawImage(img1, 0, 0, width, height);
+    ctx.drawImage(img1, 0, 0, width, height);
 
     // take the pixels out
     // let pixels = ctx.getImageData(0, 0, width, height);
